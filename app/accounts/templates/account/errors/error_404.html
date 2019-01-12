@@ -1,0 +1,36 @@
+{% extends 'account/base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% get_media_prefix as MEDIA_URL %}
+{% get_static_prefix as STATIC_URL %}
+
+
+{% block title %}
+    {% trans 'Error 404' %}
+{% endblock %}
+{% block head_title %}
+    {% trans 'Error 404' %}
+{% endblock head_title %}
+
+
+{% block extra_head %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="panel">
+        <div class="panel-body">
+            <div class="text-center">
+                <h2>ERROR 404</h2>
+                <h2>Opps, Página no encontrada.</h2>
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <a class="mr mb-sm btn btn-inverse" href="javascript:history.back()">{% trans 'Go Back' %}</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

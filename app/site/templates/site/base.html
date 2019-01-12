@@ -1,0 +1,74 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+
+<!DOCTYPE html>
+<html lang={{ LANGUAGE_CODE }}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Reynaldo Cabrera">
+    
+    {% block meta %}
+    {% endblock %}
+    
+    <title>GardenMatic | {% block title %} Home {% endblock title %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        .fondo{
+            background: url({% static 'images/fondo2.jpg' %}) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: 100% 10%;
+        }
+    </style>
+
+    {% block extra_head %}
+    {% endblock %}
+
+    {% block style %}
+    {% endblock %}
+
+</head>
+<body class="fondo">
+    <div class="container">
+        {% block main %}
+        {% endblock %}
+        
+        {% block footer %}
+        {% include 'site/footer.html' %}
+        {% endblock %}
+    </div>
+
+    {% block base_scripts %}
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/notifications.js' %}"></script>
+    {% endblock %}
+
+    {% block scripts %}
+    {% endblock %}
+
+    {% block footer_scripts %}
+    {% endblock %}
+
+    {% if messages %}
+        {% for message in messages %}
+        <script type="text/javascript">
+        $( document ).ready(function() {
+            showNotification("alert-"+'{{ message.tags }}', '{{ message }}', "top", "center", "", "");
+        });
+        </script>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

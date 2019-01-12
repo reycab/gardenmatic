@@ -1,0 +1,848 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-31 02:12-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app\accounts\forms.py:57
+msgid "First name"
+msgstr "Nombre"
+
+#: .\app\accounts\forms.py:60
+msgid "Last name"
+msgstr "Apellido"
+
+#: .\app\accounts\models.py:20
+msgid "First Name"
+msgstr "Nombre"
+
+#: .\app\accounts\models.py:21
+msgid "Last Name"
+msgstr "Apellido"
+
+#: .\app\accounts\models.py:24
+msgid "Image"
+msgstr "Imagen"
+
+#: .\app\accounts\templates\account\account_inactive.html:6
+#: .\app\accounts\templates\account\account_inactive.html:17
+msgid "Account Inactive"
+msgstr "Cuenta inactiva"
+
+#: .\app\accounts\templates\account\account_inactive.html:19
+msgid "This account is inactive."
+msgstr "Esta cuenta está inactiva"
+
+#: .\app\accounts\templates\account\account_inactive.html:23
+#: .\app\accounts\templates\account\password_reset.html:29
+#: .\app\accounts\templates\account\password_reset_done.html:26
+#: .\app\accounts\templates\account\password_reset_from_key.html:36
+#: .\app\accounts\templates\account\password_reset_from_key_done.html:19
+#: .\app\accounts\templates\account\signup.html:37
+#: .\app\accounts\templates\account\verification_sent.html:21
+msgid "Login"
+msgstr ""
+
+#: .\app\accounts\templates\account\email.html:5
+msgid "Account"
+msgstr "Cuenta"
+
+#: .\app\accounts\templates\account\email.html:8
+msgid "E-mail Addresses"
+msgstr "Dirección de correo electrónico"
+
+#: .\app\accounts\templates\account\email.html:10
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "El siguiente correo está asociado con tu cuenta"
+
+#: .\app\accounts\templates\account\email.html:24
+msgid "Verified"
+msgstr "Verificado"
+
+#: .\app\accounts\templates\account\email.html:26
+msgid "Unverified"
+msgstr "No verificado"
+
+#: .\app\accounts\templates\account\email.html:28
+msgid "Primary"
+msgstr "Primario"
+
+#: .\app\accounts\templates\account\email.html:34
+msgid "Make Primary"
+msgstr "Hacer primario"
+
+#: .\app\accounts\templates\account\email.html:35
+msgid "Re-send Verification"
+msgstr "Re-enviar verificación"
+
+#: .\app\accounts\templates\account\email.html:36
+msgid "Remove"
+msgstr "Eliminar"
+
+#: .\app\accounts\templates\account\email.html:43
+msgid "Warning:"
+msgstr "Advertencia"
+
+#: .\app\accounts\templates\account\email.html:43
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Actualmente no tienes una dirección de correo establecida.  Debes agregar "
+"una dirección de correo para recibir notificaciones, resetear tu contraseña, "
+"etc."
+
+#: .\app\accounts\templates\account\email.html:48
+msgid "Add E-mail Address"
+msgstr "Agregar dirección de correo"
+
+#: .\app\accounts\templates\account\email.html:53
+msgid "Add E-mail"
+msgstr "Agregar correo"
+
+#: .\app\accounts\templates\account\email.html:62
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Realmente quieres eliminar la dirección de correo seleccionada"
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:13
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:11
+msgid "Hello!"
+msgstr "Hola!"
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:14
+#, python-format
+msgid ""
+"You're receiving this e-mail because user %(user_display)s has given yours "
+"as an e-mail address to connect their account."
+msgstr ""
+"Recibiste este correo porque un usuario %(user_display)s dio tu dirección de "
+"correo para conectarse con su cuenta"
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:15
+msgid "To confirm this is correct, go to:"
+msgstr ""
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:23
+msgid "Activate account"
+msgstr "Activar cuenta"
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:31
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:29
+msgid "If you do not see the button correctly, go to this address"
+msgstr ""
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:49
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:47
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr ""
+
+#: .\app\accounts\templates\account\email\email_confirmation_signup_message.html:50
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:48
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s! <br>\n"
+"                    %(site_domain)s"
+msgstr ""
+
+#: .\app\accounts\templates\account\email\email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr ""
+
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:12
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"                    It can be safely ignored if you did not request a "
+"password reset. Click the link below to reset your password"
+msgstr ""
+
+#: .\app\accounts\templates\account\email\password_reset_key_message.html:21
+msgid "Reset password"
+msgstr "Resetear contraseña"
+
+#: .\app\accounts\templates\account\email\password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: .\app\accounts\templates\account\email_confirm.html:7
+msgid "Confirm E-mail Address"
+msgstr "Confirmar dirección de correo"
+
+#: .\app\accounts\templates\account\email_confirm.html:20
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user <strong>%(user_display)s</strong>."
+msgstr ""
+
+#: .\app\accounts\templates\account\email_confirm.html:24
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: .\app\accounts\templates\account\email_confirm.html:29
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: .\app\accounts\templates\account\errors\error_404.html:12
+#: .\app\accounts\templates\account\errors\error_404.html:15
+msgid "Error 404"
+msgstr ""
+
+#: .\app\accounts\templates\account\errors\error_404.html:32
+#: .\app\accounts\templates\account\errors\error_500.html:32
+msgid "Go Back"
+msgstr "Atras"
+
+#: .\app\accounts\templates\account\errors\error_500.html:12
+#: .\app\accounts\templates\account\errors\error_500.html:15
+msgid "Error 500"
+msgstr ""
+
+#: .\app\accounts\templates\account\login.html:6
+msgid "Sign In"
+msgstr "Iniciar sesión"
+
+#: .\app\accounts\templates\account\login.html:56
+msgid "Register"
+msgstr "Registrar"
+
+#: .\app\accounts\templates\account\login.html:58
+msgid "Forgot your password?"
+msgstr ""
+
+#: .\app\accounts\templates\account\logout.html:6
+#: .\app\accounts\templates\account\logout.html:23
+msgid "Sign Out"
+msgstr "Cerrar sesión"
+
+#: .\app\accounts\templates\account\logout.html:17
+msgid "Are you sure you want to sign out?"
+msgstr "Estás seguro que quieres cerrar sesión?"
+
+#: .\app\accounts\templates\account\messages\cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "No puedes eliminar tu cuenta de correo primario (%(email)s)."
+
+#: .\app\accounts\templates\account\messages\email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "Correo de confirmación enviado a %(email)s."
+
+#: .\app\accounts\templates\account\messages\email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Estás confirmado %(email)s."
+
+#: .\app\accounts\templates\account\messages\email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr ""
+
+#: .\app\accounts\templates\account\messages\logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr "Inicio de sesión satisfactorio %(name)s."
+
+#: .\app\accounts\templates\account\messages\logged_out.txt:2
+msgid "You have signed out."
+msgstr "Cerraste sesión"
+
+#: .\app\accounts\templates\account\messages\password_changed.txt:2
+msgid "Password successfully changed."
+msgstr "Contraseña cambiada satisfactoriamente"
+
+#: .\app\accounts\templates\account\messages\password_set.txt:2
+msgid "Password successfully set."
+msgstr "Contraseña establecida correctamente"
+
+#: .\app\accounts\templates\account\messages\primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr "Establecer dirección de correo primario"
+
+#: .\app\accounts\templates\account\messages\unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr "Tu correo primario debería estar verificado"
+
+#: .\app\accounts\templates\account\password_change.html:5
+#: .\app\accounts\templates\account\password_change.html:8
+#: .\app\accounts\templates\account\password_change.html:13
+#: .\app\accounts\templates\account\password_reset_from_key.html:6
+#: .\app\accounts\templates\account\password_reset_from_key_done.html:5
+msgid "Change Password"
+msgstr "Cambiar contraseña"
+
+#: .\app\accounts\templates\account\password_reset.html:8
+#: .\app\accounts\templates\account\password_reset_done.html:7
+msgid "Password Reset"
+msgstr "Restablecer contraseña"
+
+#: .\app\accounts\templates\account\password_reset.html:20
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: .\app\accounts\templates\account\password_reset.html:25
+msgid "Reset My Password"
+msgstr "Restablecer Mi Contraseña"
+
+#: .\app\accounts\templates\account\password_reset.html:33
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+"Porfavor contactanos si tú tienes algún problema para restablecer tu "
+"contraseña"
+
+#: .\app\accounts\templates\account\password_reset_done.html:22
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"Nosotros te hemos enviado un correo.  Porfavor contactanos si tú no lo "
+"recives en unos minutos"
+
+#: .\app\accounts\templates\account\password_reset_from_key.html:6
+msgid "Bad Token"
+msgstr ""
+
+#: .\app\accounts\templates\account\password_reset_from_key.html:18
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a class=\"btn btn-outline-info\" href="
+"\"%(passwd_reset_url)s\">new password reset</a>."
+msgstr ""
+
+#: .\app\accounts\templates\account\password_reset_from_key.html:23
+msgid "Enter the new password"
+msgstr "Ingrese la nueva contraseña"
+
+#: .\app\accounts\templates\account\password_reset_from_key.html:28
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: .\app\accounts\templates\account\password_reset_from_key.html:31
+#: .\app\accounts\templates\account\password_reset_from_key_done.html:15
+msgid "Your password is now changed."
+msgstr "Tu contraseña está cambiada"
+
+#: .\app\accounts\templates\account\password_set.html:5
+#: .\app\accounts\templates\account\password_set.html:8
+#: .\app\accounts\templates\account\password_set.html:13
+msgid "Set Password"
+msgstr "Establecer contraseña"
+
+#: .\app\accounts\templates\account\signup.html:7
+#: .\app\accounts\templates\account\signup.html:31
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: .\app\accounts\templates\account\signup.html:21
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Ya tienes una cuenta? Entonces porfavor <a href=\"%(login_url)s\">Iniciar "
+"sesión</a>."
+
+#: .\app\accounts\templates\account\signup_closed.html:5
+#: .\app\accounts\templates\account\signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr "Registro cerrado"
+
+#: .\app\accounts\templates\account\signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "Lo sentimos, pero el registro está actualmente cerrado"
+
+#: .\app\accounts\templates\account\snippets\already_logged_in.html:5
+msgid "Note"
+msgstr "Nota"
+
+#: .\app\accounts\templates\account\snippets\already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "ya estás logueado como %(user_display)s."
+
+#: .\app\accounts\templates\account\verification_sent.html:6
+#: .\app\accounts\templates\account\verified_email_required.html:5
+#: .\app\accounts\templates\account\verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr "Verifica tu dirección de correo"
+
+#: .\app\accounts\templates\account\verification_sent.html:17
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: .\app\accounts\templates\account\verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: .\app\accounts\templates\account\verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: .\app\accounts\templates\account\verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: .\app\common\templates\common\delete.html:6
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: .\app\common\templates\common\delete.html:13
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+"Eliminar el %(object_name)s '%(escaped_object)s' requiere eliminar los "
+"siguientes objetos protegidos relacionados:"
+
+#: .\app\common\templates\common\delete.html:20
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"?"
+msgstr ""
+"Estás seguro que quieres eliminar el %(object_name)s \"%(escaped_object)s\"?"
+
+#: .\app\common\templates\common\delete.html:23
+msgid "Summary"
+msgstr "Resumen"
+
+#: .\app\common\templates\common\delete.html:31
+msgid "Objects"
+msgstr "Objetos"
+
+#: .\app\common\templates\common\delete.html:40
+msgid "Yes, delete"
+msgstr "Sí, eliminar"
+
+#: .\app\common\templates\common\delete.html:41
+msgid "No, return"
+msgstr "No, regresar"
+
+#: .\app\gardenmatic\models.py:16 .\app\gardenmatic\models.py:117
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:30
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:31
+msgid "Name"
+msgstr "Nombre"
+
+#: .\app\gardenmatic\models.py:18
+msgid "Ambient Humidity Min (%)"
+msgstr "Humedad de ambiente mínima (%)"
+
+#: .\app\gardenmatic\models.py:20
+msgid "Ambient Humidity Max (%)"
+msgstr "Humedad de ambiente máxima (%)"
+
+#: .\app\gardenmatic\models.py:22
+msgid "Ambient Temperature Min (ºC)"
+msgstr "Temperatura de ambiente mínima (ºC)"
+
+#: .\app\gardenmatic\models.py:24
+msgid "Ambient Temperature Max (ºC)"
+msgstr "Temperatura de ambiente máxima (ºC)"
+
+#: .\app\gardenmatic\models.py:26
+msgid "Sun Time Min (Hours)"
+msgstr "Tiempo de Sol mínimo (Horas)"
+
+#: .\app\gardenmatic\models.py:28
+msgid "Sun Time Max (Hours)"
+msgstr "Tiempo de Sol máximo (Horas)"
+
+#: .\app\gardenmatic\models.py:32
+msgid "Size (Meters)"
+msgstr "Tamaño (Metros)"
+
+#: .\app\gardenmatic\models.py:34
+msgid "Start Time Reading"
+msgstr "Hora para iniciar lectura"
+
+#: .\app\gardenmatic\models.py:36
+msgid "End Time Reading"
+msgstr "Hora para finalizar lectura"
+
+#: .\app\gardenmatic\models.py:38
+msgid "Sensing Time (Minutes)"
+msgstr "Tiempo entre lecturas (Minutos)"
+
+#: .\app\gardenmatic\models.py:40
+msgid "Opening Time (Seconds)"
+msgstr "Tiempo de riego (Segundos)"
+
+#: .\app\gardenmatic\models.py:46 .\app\gardenmatic\models.py:115
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:30
+#: .\app\gardenmatic\templates\gardenmatic\sidebar.html:15
+msgid "Seeding"
+msgstr "Sembradío"
+
+#: .\app\gardenmatic\models.py:47
+msgid "Seedings"
+msgstr "Sembradios"
+
+#: .\app\gardenmatic\models.py:68
+msgid "Solenoide Valve"
+msgstr "Válvula de solenoide"
+
+#: .\app\gardenmatic\models.py:69
+msgid "Light Sensor"
+msgstr "Sensor de luz"
+
+#: .\app\gardenmatic\models.py:70
+msgid "Ambient Humidity"
+msgstr "Humedad ambiente"
+
+#: .\app\gardenmatic\models.py:71
+msgid "Ambient Temperature"
+msgstr "Temperatura ambiente"
+
+#: .\app\gardenmatic\models.py:72
+msgid "Ground Humidity"
+msgstr "Humedad de tierra"
+
+#: .\app\gardenmatic\models.py:94
+msgid "GPIO 4 (Physical 7)"
+msgstr "GPIO 4 (Físico 7)"
+
+#: .\app\gardenmatic\models.py:95
+msgid "GPIO 5 (Physical 29)"
+msgstr "GPIO 5 (Físico 29)"
+
+#: .\app\gardenmatic\models.py:96
+msgid "GPIO 6 (Physical 31)"
+msgstr "GPIO 6 (Físico 31)"
+
+#: .\app\gardenmatic\models.py:97
+msgid "GPIO 12 (Physical 32)"
+msgstr "GPIO 12 (Físico 32)"
+
+#: .\app\gardenmatic\models.py:98
+msgid "GPIO 13 (Physical 33)"
+msgstr "GPIO 13 (Físico 33)"
+
+#: .\app\gardenmatic\models.py:99
+msgid "GPIO 16 (Physical 36)"
+msgstr "GPIO 16 (Físico 36)"
+
+#: .\app\gardenmatic\models.py:100
+msgid "GPIO 17 (Physical 11)"
+msgstr "GPIO 17 (Físico 11)"
+
+#: .\app\gardenmatic\models.py:101
+msgid "GPIO 18 (Physical 12)"
+msgstr "GPIO 18 (Físico 12)"
+
+#: .\app\gardenmatic\models.py:102
+msgid "GPIO 19 (Physical 35)"
+msgstr "GPIO 19 (Físico 35)"
+
+#: .\app\gardenmatic\models.py:103
+msgid "GPIO 20 (Physical 38)"
+msgstr "GPIO 20 (Físico 38)"
+
+#: .\app\gardenmatic\models.py:104
+msgid "GPIO 21 (Physical 40)"
+msgstr "GPIO 21 (Físico 40)"
+
+#: .\app\gardenmatic\models.py:105
+msgid "GPIO 22 (Physical 15)"
+msgstr "GPIO 22 (Físico 15)"
+
+#: .\app\gardenmatic\models.py:106
+msgid "GPIO 23 (Physical 16)"
+msgstr "GPIO 23 (Físico 16)"
+
+#: .\app\gardenmatic\models.py:107
+msgid "GPIO 24 (Physical 18)"
+msgstr "GPIO 24 (Físico 18)"
+
+#: .\app\gardenmatic\models.py:108
+msgid "GPIO 25 (Physical 22)"
+msgstr "GPIO 25 (Físico 22)"
+
+#: .\app\gardenmatic\models.py:109
+msgid "GPIO 26 (Physical 37)"
+msgstr "GPIO 26 (Físico 37)"
+
+#: .\app\gardenmatic\models.py:110
+msgid "GPIO 27 (Physical 13)"
+msgstr "GPIO 27 (Físico 13)"
+
+#: .\app\gardenmatic\models.py:120
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:32
+msgid "Pin"
+msgstr ""
+
+#: .\app\gardenmatic\models.py:121
+msgid "Status"
+msgstr "Estado"
+
+#: .\app\gardenmatic\models.py:124
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:33
+msgid "Type Sensor"
+msgstr "Tipo de sensor"
+
+#: .\app\gardenmatic\models.py:130 .\app\gardenmatic\models.py:211
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:31
+#: .\app\gardenmatic\templates\gardenmatic\sidebar.html:21
+msgid "Sensor"
+msgstr ""
+
+#: .\app\gardenmatic\models.py:131
+msgid "Sensors"
+msgstr "Sensores"
+
+#: .\app\gardenmatic\models.py:212
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:33
+msgid "Reading"
+msgstr "Lectura"
+
+#: .\app\gardenmatic\models.py:219
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:9
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:19
+#: .\app\gardenmatic\templates\gardenmatic\sidebar.html:27
+msgid "Sensor Reading"
+msgstr "Lectura de sensor"
+
+#: .\app\gardenmatic\models.py:220
+msgid "Sensors Reading"
+msgstr "Lecturas de sensores"
+
+#: .\app\gardenmatic\seeding\views.py:49 .\app\gardenmatic\sensor\views.py:49
+#: .\app\gardenmatic\sensor_reading\views.py:51
+msgid "Successful creation"
+msgstr "Creación exitosa"
+
+#: .\app\gardenmatic\seeding\views.py:56 .\app\gardenmatic\seeding\views.py:88
+#: .\app\gardenmatic\sensor\views.py:56 .\app\gardenmatic\sensor\views.py:88
+#: .\app\gardenmatic\sensor_reading\views.py:58
+#: .\app\gardenmatic\sensor_reading\views.py:92
+msgid "Please correct the error below."
+msgstr "Por favor corregir el siguiente error"
+
+#: .\app\gardenmatic\seeding\views.py:78 .\app\gardenmatic\sensor\views.py:78
+#: .\app\gardenmatic\sensor_reading\views.py:81
+msgid "Successful update"
+msgstr "Actualización exitosa"
+
+#: .\app\gardenmatic\seeding\views.py:103
+#: .\app\gardenmatic\sensor\views.py:103
+#: .\app\gardenmatic\sensor_reading\views.py:107
+msgid "Successful delete"
+msgstr "Eliminación exitosa"
+
+#: .\app\gardenmatic\sensor\forms.py:52 .\app\gardenmatic\sensor\forms.py:55
+msgid "El pin ya está en uso"
+msgstr ""
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\create.html:20
+msgid "Agregar Seeding"
+msgstr "Agregar sembradío"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\create.html:30
+#: .\app\gardenmatic\templates\gardenmatic\sensor\create.html:30
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\create.html:30
+msgid "Save"
+msgstr "Guardar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\create.html:33
+#: .\app\gardenmatic\templates\gardenmatic\seeding\edit.html:31
+#: .\app\gardenmatic\templates\gardenmatic\sensor\create.html:33
+#: .\app\gardenmatic\templates\gardenmatic\sensor\edit.html:31
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\create.html:33
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\edit.html:31
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\delete.html:13
+#: .\app\gardenmatic\templates\gardenmatic\seeding\delete.html:22
+msgid "Delete Seeding"
+msgstr "Eliminar sembradío"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\edit.html:11
+msgid "Seeding Edit"
+msgstr "Editar sembradío"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\edit.html:20
+msgid "Edit Seeding"
+msgstr "Editar sembradío"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\edit.html:28
+#: .\app\gardenmatic\templates\gardenmatic\sensor\edit.html:28
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\edit.html:28
+msgid "Update"
+msgstr "Actualizar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:18
+msgid "List Seeding"
+msgstr "Listado de sembradios"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:20
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:20
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:21
+msgid "Add"
+msgstr "Agregar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:31
+msgid "Size"
+msgstr "Tamaño"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:32
+msgid "Sensing Time"
+msgstr "Tiempo entre lecturas"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:33
+msgid "Opening Time"
+msgstr "Tiempo de riego (segundos)"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:34
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:34
+msgid "Actions"
+msgstr "Acciones"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:45
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:46
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:53
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:54
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:54
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:55
+msgid "Edit"
+msgstr "Editar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:48
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:49
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:56
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:57
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:57
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:58
+msgid "Delete"
+msgstr "Eliminar"
+
+#: .\app\gardenmatic\templates\gardenmatic\seeding\list.html:59
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:67
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:68
+msgid "No data to display"
+msgstr "No hay datos para mostrar"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\create.html:22
+msgid "Agregar sensor"
+msgstr ""
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\delete.html:13
+#: .\app\gardenmatic\templates\gardenmatic\sensor\delete.html:22
+msgid "Delete Sensor"
+msgstr "Eliminar sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\edit.html:11
+msgid "Sensor Edit"
+msgstr "Editar sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\edit.html:20
+msgid "Edit Sensor"
+msgstr "Editar sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:18
+msgid "Listado de Sensores"
+msgstr ""
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor\list.html:32
+msgid "PIN"
+msgstr ""
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\delete.html:13
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\delete.html:22
+msgid "Delete Sensor Reading"
+msgstr "Eliminar lectura de sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\edit.html:11
+msgid "Sensor Reading Edit"
+msgstr "Editar lectura de sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\edit.html:20
+msgid "Edit Sensor Reading"
+msgstr "Editar lectura de sensor"
+
+#: .\app\gardenmatic\templates\gardenmatic\sensor_reading\list.html:34
+msgid "DateTime"
+msgstr "Fecha y hora"
+
+#: .\app\gardenmatic\templates\gardenmatic\sidebar.html:9
+msgid "Dashboard"
+msgstr ""
+
+#: .\app\gardenmatic\views.py:59
+msgid "No se especificó un pin"
+msgstr ""
+
+#: .\app\gardenmatic\views.py:61
+msgid "No hay valor de lectura"
+msgstr ""
+
+#: .\app\gardenmatic\views.py:63
+msgid "No hay valor de tipo de sensor"
+msgstr ""
+
+#: .\app\gardenmatic\views.py:75
+msgid "Lectura guardada con exito"
+msgstr ""
+
+#: .\app\gardenmatic\views.py:79
+msgid "El pin del sensor no está registrado"
+msgstr ""
+
+#: .\app\site\templates\site\navbar-top.html:17
+msgid "Profile"
+msgstr "Perfil"
+
+#: .\app\site\templates\site\navbar-top.html:23
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: .\config\settings\base.py:125
+msgid "Spanish"
+msgstr "Español"
+
+#: .\config\settings\base.py:126
+msgid "English"
+msgstr "Ingles"
+
+#~ msgid "Weather"
+#~ msgstr "Clima"
+
+#~ msgid "Sensor reading"
+#~ msgstr "Lectura de sensor"

@@ -1,0 +1,37 @@
+{% load i18n %}
+
+{% load static %}
+<div id="sidebar" class="sidebar-offcanvas">
+    <ul class="nav nav-pills nav-stacked">
+        {% url 'gardenmatic:home' as home %}
+        <li class="{% if home == request.path %}active{% endif %}">
+            <a href="{% url 'gardenmatic:home' %}">
+                {% trans 'Dashboard' %}
+                <i class="pull-right fa fa-tachometer fa-2x"></i>
+            </a>
+        </li>
+        {% url 'gardenmatic:seeding-list' as seeding_list %}
+        <li class="{% if seeding_list in request.path %}active{% endif %}">
+            <a href="{% url 'gardenmatic:seeding-list' %}">{% trans 'Seeding' %}
+                <i class="pull-right fa fa-envira fa-2x"></i>
+            </a>
+        </li>
+        {% url 'gardenmatic:sensor-list' as sensor_list %}
+        <li class="{% if sensor_list in request.path %}active{% endif %}">
+            <a href="{% url 'gardenmatic:sensor-list' %}">{% trans 'Sensor' %}
+                <i class="pull-right fa fa-cogs fa-2x"></i>
+            </a>
+        </li>
+        {% if request.user.is_admin %}
+        {% url 'gardenmatic:sensor-reading-list' as reading_list %}
+        <li class="{% if reading_list in request.path %}active{% endif %}">
+            <a href="{% url 'gardenmatic:sensor-reading-list' %}">{% trans 'Sensor Reading' %}
+                <i class="pull-right fa fa-file fa-2x"></i>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+
+{% block scripts %}
+{% endblock %}

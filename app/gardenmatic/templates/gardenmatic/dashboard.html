@@ -1,0 +1,195 @@
+{% extends 'gardenmatic/home.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block style %}
+<style type="text/css">
+.advertencia{
+	background-color: #FFC3BF;
+	border: 5px solid white;
+	border-radius: 30px;
+}
+.excelente{
+	background-color: #E4FAE1;
+}
+.txt{
+	font-size: 1.5em;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+	<img src="{% static 'images/logoH.png' %}" style="width: 300px;">
+</div>
+{% for config in configs %}
+<div class="row">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				Sembradio: <strong>{{ config.name }}</strong>
+			</h4>
+		</div>
+		<div class="panel-body">
+			<div class="panel-body">
+			{% for sensor in config.get_sensores %}
+				{% if sensor.type_sensor == sensor.LIGHT %}
+				<div class="col-md-6 text-center {% if sensor.get_luminosidad < config.sun_time_min %} advertencia {% else %} excelente {% endif %}">
+					<div class="col-md-12 txt">
+						<br>
+						<strong>Tiempo de luz solar necesario</strong>
+						<br>
+					</div>
+					<div class="col-xs-6 text-right">
+						<strong>Mínimo</strong><br>{{ config.sun_time_min }} horas
+					</div>
+					<div class="col-xs-6 text-left">
+						<strong>Máximo</strong><br>{{ config.sun_time_max }} horas
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<img src="{% static 'images/sol.png' %}" style="max-width:100%;width:100px;height:100px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Tiempo recibido de
+								<br>
+								luz solar
+								<br>
+								<div class="txt">{{sensor.get_luminosidad_text}}</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<br>
+						<img src="{% static 'images/nublado.png' %}" style="max-width:100%;width:100px;height:75px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Tiempo sin presencia de sol 
+								<br>
+								<div class="txt">{{sensor.get_nublado_text}}</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+
+
+				{% if sensor.type_sensor == sensor.AMBIENT_TEMPERATURE %}
+				<div class="col-md-6 text-center {% if sensor.get_luminosidad < config.sun_time_min %} advertencia {% else %} excelente {% endif %}">
+					<div class="col-md-12 txt">
+						<br>
+						<strong>Temperatura ambiental necesaria</strong>
+						<br>
+					</div>
+					<div class="col-xs-6 text-right">
+						<strong>Mínimo</strong><br>{{ config.ambient_temperature_min |floatformat:2}} ºC
+					</div>
+					<div class="col-xs-6 text-left">
+						<strong>Máximo</strong><br>{{ config.ambient_temperature_max |floatformat:2}} ºC
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<img src="{% static 'images/frio.png' %}" style="max-width:100%;width:100px;height:100px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Temperatura mínima obtenida
+								<br>
+								<div class="txt">{{sensor.get_temperatura_ambiental_min|default_if_none:0|floatformat:2}} ºC</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<img src="{% static 'images/calor.png' %}" style="max-width:100%;width:100px;height:100px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Temperatura máxima obtenida
+								<br>
+								<div class="txt">{{sensor.get_temperatura_ambiental_max |default_if_none:0|floatformat:2}} ºC</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+
+
+				{% if sensor.type_sensor == sensor.AMBIENT_HUMIDITY %}
+				<div class="col-md-6 text-center {% if sensor.get_luminosidad < config.sun_time_min %} advertencia {% else %} excelente {% endif %}">
+					<div class="col-md-12 txt">
+						<br>
+						<strong>Humedad de ambiente necesaria</strong>
+						<br>
+					</div>
+					<div class="col-xs-6 text-right">
+						<strong>Mínima</strong><br>{{ config.ambient_humidity_min|floatformat:2 }} %
+					</div>
+					<div class="col-xs-6 text-left">
+						<strong>Máxima</strong><br>{{ config.ambient_humidity_max|floatformat:2 }} %
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<img src="{% static 'images/humedadmedia.png' %}" style="max-width:100%;width:100px;height:100px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Humedad de ambiente mínima obtenida
+								<br>
+								<div class="txt">{{sensor.get_humedad_ambiental_min|default_if_none:0|floatformat:2}} %</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<img src="{% static 'images/humedadllena.png' %}" style="max-width:100%;width:100px;height:100px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Humedad de ambiente máxima obtenida
+								<br>
+								<div class="txt">{{sensor.get_humedad_ambiental_max |default_if_none:0|floatformat:2}} %</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+
+				{% if sensor.type_sensor == sensor.SOLENOIDE_VALVE %}
+				<div class="col-md-6 text-center {% if sensor.get_luminosidad < config.sun_time_min %} advertencia {% else %} excelente {% endif %}">
+					<div class="col-md-12 txt">
+						<br>
+						<strong>Riego</strong>
+						<br>
+					</div>
+					<div class="col-xs-6 text-right">
+						<br>
+					</div>
+					<div class="col-xs-6 text-left">
+						<br>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<img src="{% static 'images/riego.png' %}" style="max-width:100%;width:150px;height:150px;">
+						<div class="col-md-12">
+							<br>
+							<strong>
+								Cantidad de veces regado
+								<br>
+								<div class="txt">{{sensor.get_riegos}} veces</div>
+							</strong>
+							<br>
+						</div>
+					</div>
+					
+				</div>
+				{% endif %}
+			{% endfor%}
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+{% endblock %}

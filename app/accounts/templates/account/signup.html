@@ -1,0 +1,43 @@
+{% extends "account/base_signup.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% trans 'Sign Up' %}
+{% endblock %}
+
+{% load static %}
+{% block title-img %}
+{% endblock %}
+
+{% block content %}
+<style type="text/css">
+    .invalid-feedback{
+        display: block;
+    }
+</style>
+<div class="col-md-12 text-justify mb-4">
+        {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+</div>
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {% crispy form %}
+    {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-3 col-sm-8">
+            <button type="submit" class="btn btn-block btn-primary button-setting-secondary wow button-setting">{% trans "Sign Up" %}</button>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-3 col-sm-8">
+        <a href="{% url 'account_login' %}" class="btn btn-block btn-secondary text-color-white button-setting-secondary wow button-setting">{% trans "Login" %}</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

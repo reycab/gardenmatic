@@ -1,0 +1,6 @@
+-r base.txt
+flake8==3.5.0
+pep8-naming
+django_extensions
+mixer==5.5.7
+fake-factory

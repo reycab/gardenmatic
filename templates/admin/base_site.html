@@ -1,0 +1,13 @@
+{% extends 'admin/base_site.html' %}
+{% load static %}
+
+{% block title %}GardenMatic{% endblock %}
+
+{% block branding %}
+<a href="{% url 'admin:index' %}" class="django-admin-logo">
+	<!-- Django Administration -->
+	<div style="font-size: 2.2em;">
+		<strong>GardenMatic</strong> Admin
+	</div>
+</a>
+{% endblock branding %}

@@ -1,0 +1,66 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+{% trans 'Sign In' %}
+{% endblock %}
+
+{% load static %}
+{% block title-img %}
+{% endblock %}
+
+{% block style %}
+<style type="text/css">
+.p-l-55 {padding-left: 55px;}
+.p-r-55 {padding-right: 55px;}
+.p-t-80 {padding-top: 80px;}
+.p-t-57 {padding-top: 57px;}
+.p-b-30 {padding-bottom: 30px;}
+.p-b-37 {padding-bottom: 37px;}
+.m-b-20 {margin-bottom: 20px;}
+.p-b-20 {padding-bottom: 20px;}
+.m-b-25 {margin-bottom: 25px;}
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+body{
+    padding-top: 0;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-login100" style="background-image: url({% static 'images/fondo.jpg' %});">
+    <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+        <form class="login100-form validate-form" id="Login" method="POST" action="{% url 'account_login' %}">
+            <span class="login100-form-title p-b-37">
+                <img src="{% static 'images/logoV.png' %}">
+                <br><br>
+                <h1 style="color: #3ab34a;"><strong>Login</strong></h1>
+            </span>
+            {% crispy form %}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div class="container-login100-form-btn">
+                <button type="submit" class="login100-form-btn">Login</button>
+            </div>
+
+            <div class="text-center p-t-57 p-b-20">
+                <div>
+                    <a href="{% url 'account_signup' %}">{% trans 'Register' %}</a>
+                    <br>
+                    <a href="{% url 'account_reset_password' %}">{% trans 'Forgot your password?' %}</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
